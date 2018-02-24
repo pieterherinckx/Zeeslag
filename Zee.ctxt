@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=afmetingX\ afmetingY
+comment0.target=Zee(int,\ int)
+comment1.params=
+comment1.target=Zee()
+comment2.params=gegevenBoot
+comment2.target=void\ voegBootToe(Boot)
+comment3.params=
+comment3.target=void\ toonBoten()
+comment4.params=raakX\ raakY
+comment4.target=boolean\ isRaak(int,\ int)
+comment5.params=testboot
+comment5.target=boolean\ overlaptBoot(Boot)
+comment6.params=
+comment6.target=void\ willekeurigeBoot()
+numComments=7

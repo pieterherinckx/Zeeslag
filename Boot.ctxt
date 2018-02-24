@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=positieX\ positieY\ grootte\ horizontaal
+comment0.target=Boot(int,\ int,\ int,\ boolean)
+comment1.params=
+comment1.target=Boot()
+comment2.params=
+comment2.target=void\ toonBoot()
+comment3.params=x\ y
+comment3.target=boolean\ isRaak(int,\ int)
+comment4.params=testboot
+comment4.target=boolean\ overlaptBoot(Boot)
+numComments=5
