@@ -57,7 +57,7 @@ public class Zee
         return overlapt;
     }
     
-    public void willekeurigeBoot(){
+    public void maakWillekeurigeBoot(){
         Random rg = new Random();
         boolean horizontaal = rg.nextBoolean();
         int grootte = rg.nextInt(3) + 2;
