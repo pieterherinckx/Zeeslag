@@ -8,8 +8,8 @@ import java.util.Random;
  */
 public class Zee
 {
-    private int afmetingX;
     private int afmetingY;
+    private int afmetingX;
     private ArrayList<Boot> botenlijst;
 
     public Zee(int afmetingX, int afmetingY){
