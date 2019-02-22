@@ -1,4 +1,4 @@
-  import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Random;
 /**
  * Write a description of class Zee here.
@@ -8,8 +8,8 @@ import java.util.Random;
  */
 public class Zee
 {
-    private int afmetingY;
     private int afmetingX;
+    private int afmetingY;
     private ArrayList<Boot> botenlijst;
 
     public Zee(int afmetingX, int afmetingY){
