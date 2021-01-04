@@ -74,8 +74,5 @@ public class Zee
         Boot boot = new Boot(positieX, positieY, grootte, horizontaal);
         voegBootToe(boot);
     }
-    
-    public void test(){
-    
-    }
+
 }
