@@ -76,7 +76,7 @@ public class Zee
     }
 
     public void testSchool(){
-    
+        System.out.println("test");
     }
     
 }
