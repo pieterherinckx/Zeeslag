@@ -75,4 +75,8 @@ public class Zee
         voegBootToe(boot);
     }
 
+    public void testSchool(){
+    
+    }
+    
 }
