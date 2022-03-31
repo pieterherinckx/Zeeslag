@@ -26,6 +26,9 @@ public void voegBootToe(Boot nieuweBoot){
     if(!overlaptBoot(nieuweBoot)){
         botenlijst.add(nieuweBoot);
     }
+    else{
+        System.out.println("De boot kan niet toegevoegd worden wegens overlapping");
+    }
 }
 
 public void toonBoten(){
@@ -36,8 +39,8 @@ public void toonBoten(){
 
 public boolean isRaak(int raakX, int raakY){
     boolean raak = false;
-    for (Boot boot: botenlijst){
-        if(boot.isRaak(raakX, raakY)){
+    for (Boot testboot: botenlijst){
+        if(testboot.isRaak(raakX, raakY)){
             raak = true;
         }
     }
@@ -46,8 +49,8 @@ public boolean isRaak(int raakX, int raakY){
 
 public boolean overlaptBoot(Boot nieuweBoot){
     boolean overlapt = false;
-    for (Boot boot: botenlijst){
-        if(boot.overlaptBoot(nieuweBoot)){
+    for (Boot testboot: botenlijst){
+        if(testboot.overlaptBoot(nieuweBoot)){
             overlapt = true;
         }
     }        
@@ -55,19 +58,19 @@ public boolean overlaptBoot(Boot nieuweBoot){
 }
 
 public void maakWillekeurigeBoot(){
-        Random rg = new Random();
+        Random random = new Random();
         int x;
         int y;
-        int grootte = rg.nextInt(5) + 2; 
-        boolean horizontaal = rg.nextBoolean();        
+        int grootte = random.nextInt(5) + 2; 
+        boolean horizontaal = random.nextBoolean();        
 
         if(horizontaal){
-            x = rg.nextInt(afmetingX - grootte + 1) + 1;
-            y = rg.nextInt(afmetingY) + 1;
+            x = random.nextInt(afmetingX - grootte + 1) + 1;
+            y = random.nextInt(afmetingY) + 1;
         }
         else {
-            x = rg.nextInt(afmetingX) + 1;
-            y = rg.nextInt(afmetingY - grootte + 1) + 1;
+            x = random.nextInt(afmetingX) + 1;
+            y = random.nextInt(afmetingY - grootte + 1) + 1;
         }
   
         Boot nieuweBoot = new Boot(x, y, grootte, horizontaal);
